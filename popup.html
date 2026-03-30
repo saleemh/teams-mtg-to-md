@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams Transcript Exporter</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>Teams Transcript Exporter</h1>
+      <div id="status" class="status">Checking this tab for transcript data...</div>
+
+      <div id="options" hidden>
+        <div id="summary" class="summary"></div>
+
+        <div class="options">
+          <label class="checkbox">
+            <input type="checkbox" id="groupSpeakers" checked>
+            <span>Group consecutive lines by speaker</span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" id="includeTimestamps" checked>
+            <span>Include timestamps</span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" id="compactTimestamps">
+            <span>Use MM:SS when hour is 00</span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" id="includeMetadata" checked>
+            <span>Include metadata header</span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" id="removeFillers">
+            <span>Remove low-confidence fillers</span>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="saveBtn" type="button">Save as Markdown</button>
+        </div>
+      </div>
+
+      <div id="fallbackActions" class="actions" hidden>
+        <button id="scrapeBtn" type="button" class="secondary">Try DOM Scrape</button>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+  </html>
