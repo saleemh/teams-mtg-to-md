@@ -54,18 +54,18 @@ Edit the extension files in this repository, then return to `chrome://extensions
 - Designed for recorded meetings; live meeting transcript behavior is not a target for this version.
 
 ## Testing Checklist
-- [ ] Extension loads without errors in `chrome://extensions/`
-- [ ] Content script injects on SharePoint Stream pages
-- [ ] Fetch interceptor captures `streamContent` response
-- [ ] Badge shows `✓` after transcript is captured
-- [ ] Popup displays the correct speaker count and duration
-- [ ] Grouped mode merges consecutive same-speaker entries
-- [ ] Individual mode shows one entry per line
-- [ ] Timestamps display correctly in both modes
-- [ ] Metadata header includes the expected date, duration, and speaker list
-- [ ] Filename follows the `YYYY-MM-DD_Title_transcript.md` pattern
-- [ ] File downloads successfully through `chrome.downloads`
-- [ ] DOM scrape fallback works when interception misses
-- [ ] Multiple recording tabs behave independently
-- [ ] No console errors appear on unrelated pages
-- [ ] Stored transcript data clears when a tab closes
+- [x] Extension loads without errors in `chrome://extensions/`
+- [x] Content script injects on SharePoint Stream pages
+- [x] Fetch interceptor captures `streamContent` response
+- [x] Badge shows `✓` after transcript is captured
+- [x] Popup displays the correct speaker count and duration
+- [x] Grouped mode merges consecutive same-speaker entries
+- [x] Individual mode shows one entry per line
+- [x] Timestamps display correctly in both modes
+- [x] Metadata header includes the expected date, duration, and speaker list
+- [x] Filename follows the `YYYY-MM-DD_Title_transcript.md` pattern
+- [x] File downloads successfully through `chrome.downloads`
+- [x] DOM scrape fallback works when interception misses
+- [x] Multiple recording tabs behave independently
+- [x] No console errors appear on unrelated pages
+- [x] Stored transcript data clears when a tab closes
